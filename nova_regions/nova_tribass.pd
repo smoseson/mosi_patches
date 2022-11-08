@@ -1,0 +1,14 @@
+#N canvas 0 25 840 997 10;
+#X obj 254 239 Region 64 127 0 127 1;
+#X obj 62 117 Region 0 64 0 42 2;
+#X obj 59 240 Region 0 64 42 85 3;
+#X obj 56 366 Region 0 64 85 127 4;
+#X text 15 81 |;
+#X text 15 91 v;
+#X text 15 101 y;
+#X text 15 71 o——> x;
+#X text 72 27 Region x_min \, x_max \, y_min \, y_max \, output_channel
+;
+#X text 72 44 Note: Ranges go from 0 to 127 The origin is the corner
+closest to small horn.;
+#X coords 0 0 10 1 0 0 0;
