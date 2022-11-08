@@ -1,7 +1,3 @@
-# Dependencies
-
-  * [Pure Data](https://puredata.info/downloads/pure-data)
-
 **nova_regions** lets you divide the [Nova's](https://mosiaudio.com/products/nova) touchpanel into multiple regions to play multiple sounds.
 
 To use:
