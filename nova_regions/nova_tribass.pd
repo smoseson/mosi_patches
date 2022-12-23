@@ -7,8 +7,6 @@
 #X text 15 91 v;
 #X text 15 101 y;
 #X text 15 71 o——> x;
-#X text 72 27 Region x_min \, x_max \, y_min \, y_max \, output_channel
-;
-#X text 72 44 Note: Ranges go from 0 to 127 The origin is the corner
-closest to small horn.;
+#X text 72 27 Region x_min \, x_max \, y_min \, y_max \, output_channel;
+#X text 72 44 Note: Ranges go from 0 to 127 The origin is the corner closest to small horn.;
 #X coords 0 0 10 1 0 0 0;
