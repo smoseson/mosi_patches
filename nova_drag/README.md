@@ -9,7 +9,7 @@ To use:
        * Input Device: "USB MIDI Device" (the Nova)
        * Output Device: "IAC Driver" (Mac) OR use [loopmidi](https://www.tobias-erichsen.de/software/loopmidi.html) (Windows)
        * (Optional: Press "Save All Settings" to save between sessions.)
-  5. Open a DAW and set it's MIDI input to the IAC Driver (Mac) or loopmidi (windows), and make sure the Nova's MIDI input is *not* enabled in the DAW.
+  5. Open a DAW and set its MIDI input to the IAC Driver (Mac) or loopmidi (windows), and make sure the Nova's MIDI input is *not* enabled in the DAW.
   7. Load a VST instrument and midi-learn a parameter.
   8. Play the Nova and the parameter should change based on the drag distance.
 
