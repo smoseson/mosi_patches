@@ -8,7 +8,8 @@ To use:
   4. In Pd, go to Media -> MIDI Settings... and set:
        * Input Device: "USB MIDI Device" (the Nova)
        * Output Device: "IAC Driver" (Mac) OR use [loopmidi](https://www.tobias-erichsen.de/software/loopmidi.html) (Windows)
-       * (Optional: Press "Save All Settings" to save between sessions.)
+       * Optional: Press "Save All Settings" to save between sessions.
+<br /> Note: The region bars in the Pd patch should now move around when the Nova's touchpad is touched. If they don't then try restarting you computer.
   5. Open a DAW that can receive multiple midi channels (Ableton, Logic, Reaper, etc.)
   6. Set the DAW's MIDI input to the IAC Driver (Mac) or loopmidi (windows), and make sure the Nova's MIDI input is *not* enabled in the DAW.
   7. Create several instruments and map each to a different midi channel.
