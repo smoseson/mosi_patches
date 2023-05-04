@@ -18,5 +18,4 @@ To use:
 To customize the layout, check out [this video](https://youtu.be/6fuAdswDMgc).
 
 Troubleshooting:
-
-If "USB MIDI Device" is not shown in the Input drop-down then make sure the Nova is plugged in and powered on before opening Pd.
+* If "USB MIDI Device" is not shown in the Input drop-down then make sure the Nova is plugged in and powered on before opening Pd.
