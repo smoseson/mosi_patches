@@ -1,4 +1,4 @@
-#N canvas 0 25 840 997 10;
+#N canvas 774 82 840 997 10;
 #X floatatom 224 139 0 0 0 0 - - - 0;
 #X floatatom 204 166 0 0 0 0 - - - 0;
 #X floatatom 231 107 0 0 0 0 - - - 0;
@@ -10,24 +10,20 @@
 #X obj 162 214 pack 0 0 0;
 #X obj 192 276 route 1 20;
 #X obj 162 242 route 1;
-#X obj 220 392 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
-#X floatatom 486 693 3 0 0 0 - - - 0;
+#X obj 220 392 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 486 693 20 0 0 0 - - - 0;
 #X floatatom 522 712 3 0 0 0 - - - 0;
 #X obj 507 757 ctlout;
 #X text 494 678 value;
 #X text 545 709 controller #;
-#X obj 278 396 vsl 15 128 127 0 0 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
-#X obj 281 555 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
-#000000 #000000 0 1;
+#X obj 278 396 vsl 15 128 127 0 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 281 555 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 152 358 route 1 20;
-#X obj 281 642 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
-#000000 #000000 0 1;
-#X msg 520 587 1;
-#X obj 487 560 t f b, f 6;
-#X obj 278 670 t f b, f 6;
-#X msg 314 696 20;
+#X obj 281 642 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X msg 539 617 1;
+#X obj 506 590 t f b, f 6;
+#X obj 278 688 t f b, f 6;
+#X msg 314 714 20;
 #X obj 79 521 noteout;
 #X floatatom 52 493 3 0 0 0 - - - 0;
 #X floatatom 96 493 3 0 0 0 - - - 0;
@@ -45,43 +41,33 @@
 #X obj 252 866 noteout;
 #X obj 283 807 == 0;
 #X obj 250 828 spigot;
-#X obj 220 338 expr (\$1 <= $i1) && ($i1 < \$2) && (\$3 <= $i2) &&
-($i2 < \$4);
+#X obj 220 338 expr (\$1 <= $i1) && ($i1 < \$2) && (\$3 <= $i2) && ($i2 < \$4);
 #X obj 191 189 t b f;
-#X text 323 796 Send every note off to all channels. (Workaround to
-make sure notes are turned off even if the touch is dragged outside
-the region.);
+#X text 323 796 Send every note off to all channels. (Workaround to make sure notes are turned off even if the touch is dragged outside the region.);
 #X text 486 368 Scale y;
-#X obj 487 418 vsl 15 128 127 0 0 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#X obj 487 418 vsl 15 128 127 0 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 258 780 notein;
 #X text 228 320 Check if x & y are in range;
 #X obj 118 500 r channel_\$5;
 #X obj 291 846 r channel_\$5;
 #X obj 540 736 r channel_\$5;
 #X floatatom 135 521 5 0 0 0 - - - 0;
-#X text 144 23 Args: (x_min \, x_max \, y_min \, y_max \, output_channel)
-;
-#X text 144 40 Note: Ranges go from 0 to 127 The origin is the corner
-closest to small horn.;
+#X text 144 23 Args: (x_min \, x_max \, y_min \, y_max \, output_channel);
+#X text 144 40 Note: Ranges go from 0 to 127 The origin is the corner closest to small horn.;
 #X text 177 6 ( \$1 \, \$2 \, \$3 \, \$4 \, \$5);
 #X obj 186 298 t b f;
-#X obj 70 672 tgl 80 0 empty empty empty 17 7 0 10 #dce4fc #2840c8
-#fcfcfc 0 1;
-#X obj 73 704 hsl 75 15 0 127 0 0 empty empty empty -2 -8 0 10 #dce4fc
-#000000 #000000 0 1;
-#X obj 103 674 vsl 15 75 127 0 0 0 empty empty empty 0 -9 0 10 #dce4fc
-#000000 #000000 0 1;
+#X obj 70 672 tgl 80 0 empty empty empty 17 7 0 10 #dce4fc #2840c8 #fcfcfc 0 1;
+#X obj 73 704 hsl 75 15 0 127 0 0 empty empty empty -2 -8 0 10 #dce4fc #000000 #000000 0 1;
+#X obj 103 674 vsl 15 75 127 0 0 0 empty empty empty 0 -9 0 10 #dce4fc #000000 #000000 0 1;
 #X msg 146 632 color 8;
 #X obj 137 583 route 0 1;
 #X msg 139 609 color 0;
-#X obj 63 447 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 63 447 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 70 602 > 0;
 #X obj 70 624 select 1;
 #X text 30 575 Graphics;
 #X msg 174 656 0;
-#X obj 187 685 spigot;
+#X obj 229 667 spigot;
 #X obj 187 549 spigot;
 #X obj 500 226 s channel_\$5;
 #X floatatom 500 206 5 0 0 0 - - - 0;
@@ -114,7 +100,6 @@ closest to small horn.;
 #X connect 18 0 76 0;
 #X connect 19 0 17 0;
 #X connect 19 1 18 0;
-#X connect 20 0 23 0;
 #X connect 20 0 68 0;
 #X connect 21 0 13 0;
 #X connect 22 0 12 0;
@@ -138,7 +123,6 @@ closest to small horn.;
 #X connect 42 0 11 0;
 #X connect 43 0 8 0;
 #X connect 43 1 8 2;
-#X connect 46 0 22 0;
 #X connect 46 0 69 0;
 #X connect 47 0 41 0;
 #X connect 47 1 40 0;
@@ -161,7 +145,9 @@ closest to small horn.;
 #X connect 65 0 57 0;
 #X connect 67 0 57 0;
 #X connect 68 0 58 0;
+#X connect 68 0 23 0;
 #X connect 69 0 59 0;
+#X connect 69 0 22 0;
 #X connect 71 0 70 0;
 #X connect 72 0 74 0;
 #X connect 74 0 71 0;
